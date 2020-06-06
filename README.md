@@ -11,7 +11,7 @@ npm uninstall sass sass-loader
 
 # install npm dependencies
 
-npm install @tailwindcss/ui @inertiajs/inertia-vue @inertiajs/inertia vue axios lodash vue-meta
+npm install @tailwindcss/ui @inertiajs/inertia-vue @inertiajs/inertia vue axios lodash vue-meta ziggy
 
 # install npm dev depdendencies
 
