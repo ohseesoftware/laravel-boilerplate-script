@@ -18,10 +18,10 @@ composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/tailwind.config.js --output tailwind.config.js
 
 # phpcs.xml
-curl https://github.com/ohseesoftware/phpcs-config/blob/master/phpcs.xml --output phpcs.xml
+curl https://raw.githubusercontent.com/ohseesoftware/phpcs-config/master/phpcs.xml --output phpcs.xml
 
 # phpunit.xml
-curl https://raw.githubusercontent.com/ohseesoftware/prettier-config/master/phpunit.xml --output phpunit.xml
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/phpunit.xml --output phpunit.xml
 
 # PrettierPHPFixer.php
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-php-fixer/master/PrettierPHPFixer.php --output PrettierPHPFixer.php
