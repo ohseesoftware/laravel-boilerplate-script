@@ -1,50 +1,52 @@
-# tailwind preset with auth
+echo "tailwind preset with auth"
 composer require laravel-frontend-presets/tailwindcss --dev
 php artisan ui tailwindcss --auth
 
-# uninstall npm dependencies
+echo "uninstall npm dependencies"
 npm uninstall sass sass-loader
 
-# install npm dependencies
+echo "install npm dependencies"
 npm install tailwindcss @ohseesoftware/tailwind-config @tailwindcss/ui @inertiajs/inertia-vue @inertiajs/inertia vue axios lodash vue-meta ziggy
 
-# install npm dev dependencies
+echo "install npm dev dependencies"
 npm install --save-dev @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import postcss-nested prettier resolve-url-loader
 
-# install composer depdendencies
+echo "install composer depdendencies"
 composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list inertiajs/inertia-laravel
 
-# tailwind.config.js
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/tailwind.config.js --output tailwind.config.js
+echo "tailwind.config.js"
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/tailwind.config.js --output tailwind.config.js
 
-# phpcs.xml
+echo "phpcs.xml"
 curl https://raw.githubusercontent.com/ohseesoftware/phpcs-config/master/phpcs.xml --output phpcs.xml
 
-# phpunit.xml
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/phpunit.xml --output phpunit.xml
+echo "phpunit.xml"
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/phpunit.xml --output phpunit.xml
 
-# PrettierPHPFixer.php
+echo "PrettierPHPFixer.php"
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-php-fixer/master/PrettierPHPFixer.php --output PrettierPHPFixer.php
 
-# .prettierrc
+echo ".prettierrc"
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-config/master/.prettierrc --output .prettierrc
 
-# setup frontend resources
+echo "setup frontend resources"
 rm -rf resources/js/*
 rm -rf resources/css/*
 
 mkdir -p resources/js/pages resources/js/mixins
 
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.css --output resources/css/app.css
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.js --output resources/js/app.js
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/webpack.mix.js --output webpack.mix.js
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/css/app.css --output resources/css/app.css
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/jsapp.js --output resources/js/app.js
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/js/mixins/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/webpack.mix.js --output webpack.mix.js
 
-# setup backend resources
-curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
+echo "setup backend resources"
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/app/Providers/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
 
-# clean up
+echo "clean up"
 npm install
 npm run dev
 
+echo ""
 echo "All finished! Ensure you run the manual steps in the README!"
+echo "https://github.com/ohseesoftware/laravel-boilerplate-script"
