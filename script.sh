@@ -25,3 +25,14 @@ curl https://raw.githubusercontent.com/ohseesoftware/prettier-php-fixer/master/P
 # add .prettierrc from here:
 
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-config/master/.prettierrc --output .prettierrc
+
+# setup frontend resources
+
+rm -rf resources/js/*
+rm -rf resources/css/*
+
+mkdir -p resources/js/pages resources/js/mixins
+
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.css --output resources/css/app.css
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.js --output resources/js/app.js
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
