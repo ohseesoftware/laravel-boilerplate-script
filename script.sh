@@ -12,7 +12,7 @@ npm install tailwindcss @ohseesoftware/tailwind-config @tailwindcss/ui @inertiaj
 npm install --save-dev @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import postcss-nested prettier resolve-url-loader
 
 # install composer depdendencies
-composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list laravel/ui inertiajs/inertia-laravel
+composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list inertiajs/inertia-laravel
 
 # tailwind.config.js
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/tailwind.config.js --output tailwind.config.js
