@@ -38,6 +38,13 @@ mkdir -p resources/js/pages resources/js/mixins
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.css --output resources/css/app.css
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.js --output resources/js/app.js
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/webpack.mix.js --output webpack.mix.js
 
 # setup backend resources
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
+
+# clean up
+npm install
+npm run dev
+
+echo "All finished! Ensure you run the manual steps in the README!"
