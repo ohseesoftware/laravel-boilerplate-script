@@ -36,7 +36,7 @@ rm -rf resources/css/*
 mkdir -p resources/js/pages resources/js/mixins
 
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/css/app.css --output resources/css/app.css
-curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/jsapp.js --output resources/js/app.js
+curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/js/app.js --output resources/js/app.js
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/js/mixins/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/webpack.mix.js --output webpack.mix.js
 
