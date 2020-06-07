@@ -53,4 +53,6 @@ curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/
 
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
 
-# 
+# run tailwind preset
+
+php artisan ui tailwindcss --auth
