@@ -11,3 +11,6 @@ curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/
 ## Manual steps
 
 * Update the `DB_DATABASE` in the `phpunit.xml` to the name of your test database
+* Setup your `.env` file with your local development details
+* Migrate your database with `php artisan migrate`
+* Setup valet with `valet link`
