@@ -4,7 +4,7 @@ npm uninstall sass sass-loader
 
 # install npm dependencies
 
-npm install @tailwindcss/ui @inertiajs/inertia-vue @inertiajs/inertia vue axios lodash vue-meta ziggy
+npm install tailwindcss @ohseesoftware/tailwind-config @tailwindcss/ui @inertiajs/inertia-vue @inertiajs/inertia vue axios lodash vue-meta ziggy
 
 # install npm dev depdendencies
 
@@ -14,15 +14,27 @@ npm install --save-dev @babel/preset-env @babel/plugin-syntax-dynamic-import @ba
 
 composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list laravel/ui inertiajs/inertia-laravel
 
-# copy phpcs.xml from here:
+# install tailwind preset
 
-https://github.com/ohseesoftware/phpcs-config/blob/master/phpcs.xml
+composer require laravel-frontend-presets/tailwindcss --dev
 
-# add PrettierPHPFixer.php from here:
+# tailwind.config.js
+
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/tailwind.config.js --output tailwind.config.js
+
+# phpcs.xml
+
+curl https://github.com/ohseesoftware/phpcs-config/blob/master/phpcs.xml --output phpcs.xml
+
+# phpunit.xml
+
+curl https://raw.githubusercontent.com/ohseesoftware/prettier-config/master/phpunit.xml --output phpunit.xml
+
+# PrettierPHPFixer.php
 
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-php-fixer/master/PrettierPHPFixer.php --output PrettierPHPFixer.php
 
-# add .prettierrc from here:
+# .prettierrc
 
 curl https://raw.githubusercontent.com/ohseesoftware/prettier-config/master/.prettierrc --output .prettierrc
 
@@ -36,3 +48,9 @@ mkdir -p resources/js/pages resources/js/mixins
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.css --output resources/css/app.css
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/app.js --output resources/js/app.js
 curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
+
+# setup backend resources
+
+curl https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
+
+# 
