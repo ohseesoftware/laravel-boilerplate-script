@@ -39,6 +39,7 @@ curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-scri
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/jsapp.js --output resources/js/app.js
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/resources/js/mixins/ZiggyMixin.js --output resources/js/mixins/ZiggyMixin.js
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/webpack.mix.js --output webpack.mix.js
+curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/babel.config.js --output babel.config.js
 
 echo "Setup backend resources"
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/app/Providers/InertiaServiceProvider.php --output app/Providers/InertiaServiceProvider.php
