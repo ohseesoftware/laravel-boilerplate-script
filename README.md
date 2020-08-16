@@ -10,6 +10,7 @@ curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-scri
 
 ## Manual steps
 
+- Install Laravel on your own: `laravel new PROJECT_NAME`
 - Update the `DB_DATABASE` in the `phpunit.xml` to the name of your test database
 - Setup your `.env` file with your local development details
 - Migrate your database with `php artisan migrate`
