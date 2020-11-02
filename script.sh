@@ -1,14 +1,15 @@
 echo "Installing Laravel with Jetstream"
-laravel new --jet app
+laravel new --jet ./
+php artisan jetstream:install inertia --teams
+
+echo "Install composer depdendencies"
+composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list inertiajs/inertia-laravel
 
 echo "Install npm dependencies"
 npm install @ohseesoftware/tailwind-config vue-meta ziggy @inertiajs/inertia-vue @inertiajs/progress
 
 echo "Install npm dev dependencies"
 npm install --save-dev @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import postcss-nested prettier resolve-url-loader
-
-echo "Install composer depdendencies"
-composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list inertiajs/inertia-laravel
 
 echo "Setup Inertia"
 php artisan inertia:middleware
