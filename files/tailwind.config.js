@@ -2,16 +2,22 @@ const config = require('@ohseesoftware/tailwind-config');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  ...config,
+  purge: [
+    './vendor/laravel/jetstream/**/*.blade.php',
+    './storage/framework/views/*.php',
+    './resources/views/**/*.blade.php',
+    './resources/js/**/*.vue',
+  ],
+
   extend: {
     theme: config.theme,
+
     fontFamily: {
-      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      sans: ['Nunito', ...defaultTheme.fontFamily.sans],
     },
   },
+
   plugins: [
-    require('@tailwindcss/ui')({
-      layout: 'sidebar',
-    })
+    require('@tailwindcss/ui')
   ],
 };
