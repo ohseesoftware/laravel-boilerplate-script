@@ -1,18 +1,19 @@
 echo "Installing Laravel with Jetstream"
-laravel new --jet ./
-php artisan jetstream:install inertia --teams
+laravel new --force .
 
 echo "Install composer depdendencies"
-composer require tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list inertiajs/inertia-laravel
-
-echo "Install npm dependencies"
-npm install @ohseesoftware/tailwind-config vue-meta ziggy @inertiajs/inertia-vue @inertiajs/progress
-
-echo "Install npm dev dependencies"
-npm install --save-dev @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import postcss-nested prettier resolve-url-loader
+composer require laravel/jetstream tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list 
 
 echo "Setup Inertia"
+php artisan jetstream:install inertia --teams
+composer require inertiajs/inertia-laravel
 php artisan inertia:middleware
+
+echo "Install npm dependencies"
+npm install @ohseesoftware/tailwind-config vue vue-meta ziggy
+
+echo "Install npm dev dependencies"
+npm install --save-dev @babel/core @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import@12 postcss-nested@4 prettier resolve-url-loader
 
 echo "tailwind.config.js"
 curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-script/master/files/tailwind.config.js --output tailwind.config.js
