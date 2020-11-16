@@ -10,7 +10,8 @@ curl -s https://raw.githubusercontent.com/ohseesoftware/laravel-boilerplate-scri
 
 ## Manual steps
 
-- Install Laravel on your own: `laravel new PROJECT_NAME`
+- Create a new directory (not a git repo)
+- Run the script via curl
 - Add `InertiaServiceProvider` to `config/app.php`
 - Update the `DB_DATABASE` in the `phpunit.xml` to the name of your test database
 - Setup your `.env` file with your local development details
