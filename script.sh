@@ -1,5 +1,5 @@
-echo "Installing Laravel with Jetstream"
-laravel new --force .
+echo "Installing Laravel"
+laravel new .
 
 echo "Install composer depdendencies"
 composer require laravel/jetstream tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list 
@@ -10,7 +10,7 @@ composer require inertiajs/inertia-laravel
 php artisan inertia:middleware
 
 echo "Install npm dependencies"
-npm install @ohseesoftware/tailwind-config vue vue-meta ziggy
+npm install @ohseesoftware/tailwind-config vue@next vue-meta ziggy
 
 echo "Install npm dev dependencies"
 npm install --save-dev @babel/core @babel/preset-env @babel/plugin-syntax-dynamic-import @babel/parser babel-eslint eslint eslint-config-prettier eslint-import-resolver-alias eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue postcss-import@12 postcss-nested@4 prettier resolve-url-loader
