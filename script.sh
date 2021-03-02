@@ -1,6 +1,3 @@
-echo "Installing Laravel"
-laravel new .
-
 echo "Install composer depdendencies"
 composer require laravel/jetstream tightenco/ziggy squizlabs/php_codesniffer ohseesoftware/laravel-schema-list 
 
