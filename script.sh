@@ -4,7 +4,6 @@ composer require laravel/jetstream tightenco/ziggy squizlabs/php_codesniffer ohs
 echo "Setup Inertia"
 php artisan jetstream:install inertia --teams
 composer require inertiajs/inertia-laravel
-php artisan inertia:middleware
 
 echo "Install npm dependencies"
 npm install @ohseesoftware/tailwind-config vue@next vue-meta ziggy
